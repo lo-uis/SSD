@@ -1,4 +1,4 @@
-import os,path as ops
+import os.path as osp
 import random
 
 import xml.etree.ElementTree as ET  #XMLファイルをテキストから読み込み、加工、保存
@@ -65,7 +65,7 @@ def make_datapath_list(rootpath):
     return train_img_list, train_anno_list, val_img_list, val_anno_list
 
 # ファイルパスのリストを作成
-rootpath = "./data/VOCdevkit/VOC2012/"
+rootpath = "/home/kitahara/Desktop/VOCdevkit/VOC2012/"
 train_img_list, train_anno_list, val_img_list, val_anno_list = make_datapath_list(rootpath)
 
 # 動作確認
