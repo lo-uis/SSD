@@ -169,3 +169,5 @@ height, width, channels = img.shape  # 画像のサイズを取得
 
 # アノテーションをリストで表示
 transform_anno(val_anno_list[ind], width, height)
+#確認
+print(transform_anno(val_anno_list[ind], width, height))
